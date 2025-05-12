@@ -11,7 +11,7 @@ const OrderplacedList = () => {
     useEffect(() => {
         const fetchOrders = async () => {
             try {
-                const response = await axios.get("/orders"); // Vite proxy will forward to backend
+                const response = await axios.get("https://e-commerce-mernappbackend-1.onrender.com/orders"); // Vite proxy will forward to backend
                 console.log("Fetched orders:", response.data);
                 setOrders(response.data || []);
             } catch (err) {
