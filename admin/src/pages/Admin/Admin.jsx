@@ -6,6 +6,8 @@ import {Routes,Route} from 'react-router-dom';
 import AddProduct from '../../Component/AddProduct/AddProduct';
 import ListProduct from '../../Component/ListProduct/ListProduct';
 
+import OrderplacedList from '../../Component/OrderplacedList/OrderplacedList';
+
 const Admin = () => {
   return (
     <div className='admin'>
@@ -13,6 +15,7 @@ const Admin = () => {
         <Routes>
           <Route path='/addproduct' element={<AddProduct/>}/>
           <Route path='/listproduct' element={<ListProduct/>}/>
+          <Route path='/orderplacedList' element={<OrderplacedList />} /> 
 
         </Routes>
 
